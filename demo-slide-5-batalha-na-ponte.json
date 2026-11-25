@@ -1,0 +1,71 @@
+{
+  "formato": "rpg-mestre-campanha",
+  "versao": 1,
+  "salvoEm": "2026-11-05T12:00:00.000Z",
+  "campanha": {
+    "idioma": "pt",
+    "ambiencia": "combate",
+    "jogadores": [
+      {
+        "id": "demo-bruno",
+        "nome": "Bruno",
+        "personagem": "Mercenário humano (guerreiro)",
+        "atributos": { "Força": 5, "Agilidade": 3, "Mente": 2, "Presença": 3 },
+        "talentos": ["Muralha de escudo: uma vez por luta, bloqueia um golpe mirado num aliado", "Golpe imprudente: vantagem num ataque, mas o próximo golpe contra você causa +1"],
+        "pv": 4,
+        "pvMax": 6,
+        "ouro": 12,
+        "inventario": ["Espada longa", "Escudo redondo surrado", "Cota de malha", "Frasco de aguardente barata"],
+        "aparencia": "Homem de ombros largos, uns trinta anos, barba escura curta, cota de malha marcada, escudo redondo com um lobo vermelho desbotado."
+      },
+      {
+        "id": "demo-lia",
+        "nome": "Lia",
+        "personagem": "Bruxa meio-elfa (conjuradora)",
+        "atributos": { "Força": 2, "Agilidade": 4, "Mente": 5, "Presença": 3 },
+        "talentos": ["Fogo-bruxo: lança chamas verdes à distância (1d4 de dano, teste de Mente)", "Costurar a carne: cura 1d4 PV pelo toque, mas perde 1 PV"],
+        "pv": 5,
+        "pvMax": 6,
+        "ouro": 7,
+        "inventario": ["Cajado de freixo", "Bolsa de ervas secas (3 usos)", "Amuleto de osso", "Adaga"],
+        "aparencia": "Meio-elfa esguia, cabelo prateado trançado, capa verde suja de lama, amuletos de osso pendurados no cajado."
+      }
+    ],
+    "historico": [
+      { "papel": "mestre", "autor": "mestre", "texto": "[CENA:combate] [NARRADOR] A chuva bate forte na Velha Ponte de Pedra. Goblins saltam de baixo do parapeito e cercam a carroça de remédios. Hobb, o velho carroceiro, se encolhe atrás das rodas. Uma lança enferrujada raspa o ombro de Bruno. [PV:Bruno:-2] Bruno, o que você faz?" },
+      { "papel": "jogador", "autor": "Bruno", "texto": "Eu derrubo o goblin da lança com o escudo." },
+      { "papel": "mestre", "autor": "mestre", "texto": "[NARRADOR] O escudo acerta em cheio, e o goblin some por cima do parapeito, direto no rio furioso. Do outro lado, uma flecha passa de raspão pelo braço de Lia. [PV:Lia:-1] Lia, e você?" },
+      { "papel": "jogador", "autor": "Lia", "texto": "Eu lanço fogo-bruxo no arqueiro." },
+      { "papel": "mestre", "autor": "mestre", "texto": "[NARRADOR] Chamas verdes cortam a chuva, e o arqueiro cai gritando atrás do parapeito. Restam dois goblins, mas a ponte treme: Gorrak Uma-Orelha, o hobgoblin enorme, avança pela outra ponta com o cutelo erguido, direto para a carroça. Bruno, ele vai passar por você. O que você faz?" },
+      { "papel": "jogador", "autor": "Bruno", "texto": "Eu entro na frente dele e ataco com a espada longa." }
+    ],
+    "cenas": [],
+    "turnoCombate": null,
+    "convidados": [],
+    "diario": [
+      "O grupo foi contratado pela vila de Espinhal para escoltar uma carroça de remédios pela Velha Ponte de Pedra.",
+      "Gorrak Uma-Orelha lidera o bando de goblins que embosca a ponte; ele quer a carroça, não a escolta."
+    ],
+    "mundo": "A Velha Ponte de Pedra, ao anoitecer, sob chuva forte, sobre um rio furioso. O grupo escolta uma carroça de remédios até a vila de Espinhal, tomada pela peste. O velho carroceiro, Hobb, se encolhe atrás da carroça. A luta já está em andamento: dois goblins caíram, dois ainda lutam, e o líder, Gorrak Uma-Orelha, um hobgoblin enorme com um cutelo, avança para agarrar a carroça.",
+    "notasMestre": "Esta é uma demonstração ao vivo de um único turno. Na próxima resposta, não reapresente a história: relembre a luta em uma frase curta, narre Gorrak chegando diante de Bruno e peça agora o teste do ataque de Bruno com [ROLAGEM:Bruno:Força:14], parando a resposta aí. No máximo 50 palavras. Mantenha o combate tenso, e depois do resultado narre o golpe em poucas frases, aplicando [PV:...] se alguém for ferido.",
+    "missao": {
+      "etapa": 0,
+      "plano": {
+        "titulo": "Remédios para Espinhal",
+        "objetivo": "Levar a carroça de remédios até a vila de Espinhal",
+        "gancho": "A vila de Espinhal está tomada pela peste, e a carroça precisa cruzar a Velha Ponte de Pedra.",
+        "oposicao": { "nome": "Gorrak Uma-Orelha", "motivo": "Quer os remédios para vender a quem pagar mais", "segredo": "Alguém em Espinhal avisou Gorrak sobre a carroça" },
+        "etapas": [
+          { "lugar": "Velha Ponte de Pedra", "acontecimento": "Emboscada dos goblins sob a chuva", "pista": "Gorrak carrega um bilhete com a rota da carroça" },
+          { "lugar": "Estrada da floresta", "acontecimento": "Os goblins restantes tentam atrasar a carroça", "pista": "O bilhete traz o selo do conselho de Espinhal" },
+          { "lugar": "Vila de Espinhal", "acontecimento": "O grupo entrega os remédios e confronta o traidor", "pista": "O conselheiro lucra com a peste" }
+        ],
+        "reviravolta": "Quem traiu a carroça é um conselheiro de Espinhal",
+        "climax": "O confronto com o conselheiro na praça da vila",
+        "desfecho": "Os remédios chegam, e a vila fica em dívida com o grupo",
+        "proximoGancho": "O conselheiro trabalhava para alguém de fora da vila",
+        "motivos": ["ponte sob a chuva", "carroça de remédios", "peste"]
+      }
+    }
+  }
+}
